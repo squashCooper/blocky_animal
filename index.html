@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blocky Animal</title>
+  </head>
+
+  <style type="text/css">
+
+
+
+#animate_on{
+
+background-color: #4ff383; 
+border: none;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+  
+}
+#animate_off{
+
+  background-color: #FF0000; 
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    
+}
+
+  </style>
+
+  <body onload="main()">
+    <canvas id="webgl" width="500" height="500">
+    Please use a browser that supports "canvas"
+    </canvas>
+    
+    <form>
+      <div id="numbd"></div>
+
+    <button type = "button" id = "animate_off" >OFF</button>
+    <button type = "button" id = "animate_on">ON </button>
+   
+    
+    <div>
+        <input type="range" id="camera_slide" name="Camera" min="0" max="360" value="0" step="5" />
+        <label for="camera_slide">Camera Angle</label>
+    </div>
+ 
+  
+    <div>
+      <input type="range" id="leg_slide" name="tail" min="0" max="40" value="0" step="5" />
+      <label for="leg_slide">RUN!</label>
+    </div>
+    <div>
+      <div>
+        <input type="range" id="head_slide" name="head" min="-20" max="20" value="0" step="5" />
+        <label for="head_slide">EAT!</label>
+      </div>
+  
+      <div>
+        <input type="range" id="tail_slide" name="tail" min="-10" max="10" value="0" step="5" />
+        <label for="tail_slide">Move Tail 1</label>
+      </div>
+
+<div>
+  <input type="range" id="tail2_slide" name="tail" min="0" max="80" value="0" step="5" />
+  <label for="tail2_slide">Move Tail 2</label>
+</div>
+<div>
+  <input type="range" id="tail3_slide" name="tail" min="0" max="20" value="0" step="5" />
+  <label for="tail3_slide">Move Tail 3</label>
+</div>
+
+<div>
+  <h2>Turn animation off to control manually. Move mouse across canvas to rotate.</h2>
+</div>
+<div>
+  <h3>Note for graders: third level joint is only visible if the tail is pointing up.</h3>
+</div>
+
+
+
+
+   
+      
+    </form> 
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src = "lib\cuon-matrix.js"></script>
+    <script src ="blocky_animal.js"></script>
+    <script src = "Point.js"></script>
+    <script src = "triangle.js"></script>
+    <script src = "Circle.js"></script>
+    <script src = "Cube.js"></script>
+    <script src = "Rectangle.js"></script>
+    <script src = "Cylinder.js"></script>
+    <script src = "Pyramid.js"></script>
+    
+    
+    
+    
+  </body>
+</html>
